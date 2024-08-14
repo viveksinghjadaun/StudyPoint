@@ -32,13 +32,7 @@ const userSchema = new mongoose.Schema(
 			type: String,
 			required: true,
 			trim: true,
-			validate: {
-				validator: function (v) {
-					// Basic email format validation
-					return /\b[A-Za-z0-9._%+-]+@gmail\.com\b/.test(v);
-				},
-				message: props => `${props.value} is not a valid Gmail address`
-			}
+			
 		},
 
 		password: {

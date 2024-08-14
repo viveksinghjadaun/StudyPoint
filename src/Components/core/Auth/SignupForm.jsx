@@ -60,10 +60,7 @@ function SignupForm() {
       toast.error("Please enter your email");
       return;
     }
-    if (!/\b[A-Za-z0-9._%+-]+@gmail\.com\b/.test(email.trim())) {
-      toast.error("Please enter a valid Gmail address");
-      return;
-    }
+    
 
     // Password Validation
     if (!password.trim()) {
